@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 
+//import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -442,21 +444,62 @@ import java.util.Scanner;
 //    }
 //}
 // Precedencia de operadores
+//public class HolaMundo {
+//    
+//    public static void main(String args[]) {
+//        var x = 5;
+//        var y = 10;        
+//        var z = ++x + y--;
+//        
+//        System.out.println("x = " + x);
+//        System.out.println("y = " + y);
+//        System.out.println("z = " + z);
+//        
+//        var resultado = 4 + 5 * 6 / 3;  // 4 + ((5 * 6) / 3)
+//        System.out.println("resultado = " + resultado);
+//        
+//        resultado = (4 + 5) * 6 / 3;
+//        System.out.println("resultado = " + resultado);
+//    }
+//}
+/*
+En el siguiente ejercicio se solicita calcular el área y el perímetro de un Rectángulo, para ello deberemos crear las siguientes variables:
+
+alto (int)
+ancho (int)
+
+El usuario debe proporcionar los valores de largo y ancho, y después se debe imprimir el resultado en el siguiente formato(no usar acentos y respetar los espacios, mayúsculas, minúsculas y saltos de línea):
+Proporciona el alto:
+Proporciona el ancho:
+Area: <area>
+Perimetro: <perimetro>
+Las fórmulas para calcular el área y el perímetro de un Rectángulo son:
+
+Área: alto * ancho
+
+Perímetro: (alto + ancho) * 2
+
+Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
+Questions for this assignment
+¿Cuál es el código del requerimiento solicitado?
+ */
 public class HolaMundo {
-    
+
     public static void main(String args[]) {
-        var x = 5;
-        var y = 10;        
-        var z = ++x + y--;
-        
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
-        
-        var resultado = 4 + 5 * 6 / 3;  // 4 + ((5 * 6) / 3)
-        System.out.println("resultado = " + resultado);
-        
-        resultado = (4 + 5) * 6 / 3;
-        System.out.println("resultado = " + resultado);
+        System.out.println("Proporciona el alto: ");
+        Scanner consola = new Scanner(System.in);
+        var alto = Integer.parseInt(consola.nextLine());
+
+        System.out.println("Proporciona el ancho: ");
+        consola = new Scanner(System.in);
+        var ancho = Integer.parseInt(consola.nextLine());
+
+        var resultadoArea = alto * ancho;
+
+        var resultadoPerimetro = (alto + ancho) * 2;
+
+        System.out.println("Area  = " + resultadoArea);
+        System.out.println("Perimetro = " + resultadoPerimetro);
+
     }
 }

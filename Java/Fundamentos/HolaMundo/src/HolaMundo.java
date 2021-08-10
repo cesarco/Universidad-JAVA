@@ -540,39 +540,62 @@ Puedes utilizar el IDE de tu preferencia para codificar la solución y después 
 //    }
 //}
 // Sentencia de control if - else en Java
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//        var condicion = false;
+//
+//        if (condicion == true) {
+//            System.out.println("Condicion verdadera");
+//        } else {
+//            System.out.println("Condicion falsa");
+//
+//        }
+//
+//        var numero = 5;
+//        var numeroTexto = " Numero desconocido";
+//
+//        if (numero == 1) {
+//            numeroTexto = "Numero uno";
+//        } 
+//        else if (numero == 2) {
+//            numeroTexto = "Numero dos";
+//
+//        } 
+//        else if (numero == 3) {
+//            numeroTexto = "Numero tres";
+//        }
+//        else if (numero == 4){
+//            numeroTexto = "Numero cuatro";
+//           
+//        }
+//        else{
+//            numeroTexto = "Numero no encontrado";
+//        }
+//        System.out.println("numeroTexto = " + numeroTexto);
+//
+//    }
+//}
+// Calculo estación del año con if-else
 public class HolaMundo {
 
     public static void main(String args[]) {
-        var condicion = false;
+        System.out.println("Digite el numero del mes que desea consultar su estacion");
 
-        if (condicion == true) {
-            System.out.println("Condicion verdadera");
-        } else {
-            System.out.println("Condicion falsa");
+        Scanner consola = new Scanner(System.in);
+        var mes = Integer.parseInt(consola.nextLine());
+        var estacion = "Estacion desconocida";
 
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "Invierno";
+        } else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "Primavera";
+        } else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "Verano";
+        } else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "Otonio";
         }
-
-        var numero = 5;
-        var numeroTexto = " Numero desconocido";
-
-        if (numero == 1) {
-            numeroTexto = "Numero uno";
-        } 
-        else if (numero == 2) {
-            numeroTexto = "Numero dos";
-
-        } 
-        else if (numero == 3) {
-            numeroTexto = "Numero tres";
-        }
-        else if (numero == 4){
-            numeroTexto = "Numero cuatro";
-           
-        }
-        else{
-            numeroTexto = "Numero no encontrado";
-        }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("estacion = " + estacion);
 
     }
 }

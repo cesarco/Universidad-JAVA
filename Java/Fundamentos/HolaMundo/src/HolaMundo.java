@@ -518,24 +518,61 @@ El numero mayor es:
 <numeroMayor>
 Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
  */
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//        System.out.println("Proporciona el numero 1: ");
+//        Scanner numero = new Scanner(System.in);
+//        var numero1 = Integer.parseInt(numero.nextLine());
+//
+//        System.out.println("Proporcina el numero 2");
+//        numero = new Scanner(System.in);
+//        var numero2 = Integer.parseInt(numero.nextLine());
+//
+//        if (numero1 > numero2) {
+//            System.out.println("El numero mayor es: ");
+//            System.out.println(numero1);
+//        } else {
+//            System.out.println("El numero mayor es: ");
+//            System.out.println(numero2);
+//        }
+//
+//    }
+//}
+// Sentencia de control if - else en Java
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("Proporciona el numero 1: ");
-        Scanner numero = new Scanner(System.in);
-        var numero1 = Integer.parseInt(numero.nextLine());
+        var condicion = false;
 
-        System.out.println("Proporcina el numero 2");
-        numero = new Scanner(System.in);
-        var numero2 = Integer.parseInt(numero.nextLine());
-
-        if (numero1 > numero2) {
-            System.out.println("El numero mayor es: ");
-            System.out.println(numero1);
+        if (condicion == true) {
+            System.out.println("Condicion verdadera");
         } else {
-            System.out.println("El numero mayor es: ");
-            System.out.println(numero2);
+            System.out.println("Condicion falsa");
+
         }
+
+        var numero = 5;
+        var numeroTexto = " Numero desconocido";
+
+        if (numero == 1) {
+            numeroTexto = "Numero uno";
+        } 
+        else if (numero == 2) {
+            numeroTexto = "Numero dos";
+
+        } 
+        else if (numero == 3) {
+            numeroTexto = "Numero tres";
+        }
+        else if (numero == 4){
+            numeroTexto = "Numero cuatro";
+           
+        }
+        else{
+            numeroTexto = "Numero no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
 
     }
 }

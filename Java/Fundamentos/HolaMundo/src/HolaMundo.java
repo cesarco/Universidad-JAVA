@@ -600,31 +600,66 @@ Puedes utilizar el IDE de tu preferencia para codificar la solución y después 
 //    }
 //}
 // Sentencia de control switch en Java
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//        var numero = 3;
+//        var numeroTexto = "Valor desconocido";
+//
+//        switch (numero) {
+//            case 1:
+//                numeroTexto = "Numero uno";
+//                break;
+//            case 2:
+//                numeroTexto = "Numero dos";
+//                break;
+//            case 3:
+//                numeroTexto = "Numero tres";
+//                break;
+//            case 4:
+//                numeroTexto = "Numero cuantro";
+//                break;
+//            default:
+//                numeroTexto = "Caso no encontrado";
+//
+//        }
+//        System.out.println("numeroTexto = " + numeroTexto);
+//
+//    }
+//}
+// Cálculo estacion del año con Switch
 public class HolaMundo {
-    
-    public static void main(String args[]){
-        var numero = 3;
-        var numeroTexto = "Valor desconocido";
-        
-        switch(numero){ 
+
+    public static void main(String args[]) {
+        System.out.println("Progama para saber las estaciones del año segun el mes");
+        System.out.println("Digite un numero del mes");
+        Scanner consola = new Scanner(System.in);
+        var mes = Integer.parseInt(consola.nextLine());
+        var estacion = " Estacion desconocida";
+        switch (mes) {
             case 1:
-                numeroTexto = "Numero uno";
-                break;
             case 2:
-                numeroTexto = "Numero dos";
+            case 12:
+                estacion = "Invierno";
                 break;
-            case 3: 
-                numeroTexto = "Numero tres";
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
                 break;
-            case 4: 
-                numeroTexto = "Numero cuantro";
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
                 break;
-            default:
-                numeroTexto = "Caso no encontrado";
-                
-              
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otonio";
+                break;
+
         }
-        System.out.println("numeroTexto = " + numeroTexto);
-        
+        System.out.println("estacion = " + estacion);
+
     }
 }

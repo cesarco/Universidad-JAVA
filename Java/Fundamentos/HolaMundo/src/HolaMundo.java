@@ -483,23 +483,59 @@ Puedes utilizar el IDE de tu preferencia para codificar la solución y después 
 Questions for this assignment
 ¿Cuál es el código del requerimiento solicitado?
  */
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//        System.out.println("Proporciona el alto: ");
+//        Scanner consola = new Scanner(System.in);
+//        var alto = Integer.parseInt(consola.nextLine());
+//
+//        System.out.println("Proporciona el ancho: ");
+//        consola = new Scanner(System.in);
+//        var ancho = Integer.parseInt(consola.nextLine());
+//
+//        var resultadoArea = alto * ancho;
+//
+//        var resultadoPerimetro = (alto + ancho) * 2;
+//
+//        System.out.println("Area  = " + resultadoArea);
+//        System.out.println("Perimetro = " + resultadoPerimetro);
+//
+//    }
+//}
+/*
+Solicitar al usuario dos valores:
+
+numero1 (int)
+
+numero2 (int)
+
+Se debe imprimir el mayor de los dos números (la salida debe ser identica a la que sigue):
+
+Proporciona el numero1:
+Proporciona el numero2:
+El numero mayor es:
+<numeroMayor>
+Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
+ */
 public class HolaMundo {
 
     public static void main(String args[]) {
-        System.out.println("Proporciona el alto: ");
-        Scanner consola = new Scanner(System.in);
-        var alto = Integer.parseInt(consola.nextLine());
+        System.out.println("Proporciona el numero 1: ");
+        Scanner numero = new Scanner(System.in);
+        var numero1 = Integer.parseInt(numero.nextLine());
 
-        System.out.println("Proporciona el ancho: ");
-        consola = new Scanner(System.in);
-        var ancho = Integer.parseInt(consola.nextLine());
+        System.out.println("Proporcina el numero 2");
+        numero = new Scanner(System.in);
+        var numero2 = Integer.parseInt(numero.nextLine());
 
-        var resultadoArea = alto * ancho;
-
-        var resultadoPerimetro = (alto + ancho) * 2;
-
-        System.out.println("Area  = " + resultadoArea);
-        System.out.println("Perimetro = " + resultadoPerimetro);
+        if (numero1 > numero2) {
+            System.out.println("El numero mayor es: ");
+            System.out.println(numero1);
+        } else {
+            System.out.println("El numero mayor es: ");
+            System.out.println(numero2);
+        }
 
     }
 }

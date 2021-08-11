@@ -686,28 +686,60 @@ Proporciona un valor entre 0 y 10:
 A
 Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
  */
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//
+//        System.out.println("Digite un numero del mes");
+//        Scanner consola = new Scanner(System.in);
+//        var nota = Integer.parseInt(consola.nextLine());
+//        var texto = "Valor desconocido";
+//
+//        if (nota == 9 || nota == 10) {
+//            texto = "A";
+//        } else if (nota == 8 && nota < 9) {
+//            texto = "B";
+//        } else if (nota == 7 && nota < 8) {
+//            texto = "C";
+//        } else if (nota == 6 && nota < 7) {
+//            texto = "D";
+//        } else if (nota == 0 || nota < 6) {
+//            texto = "F";
+//        }
+//        System.out.println("texto " + texto);
+//
+//    }
+//
+//}
+// Ciclo While
+//public class HolaMundo {
+//
+//    public static void main(String args[]) {
+//        var contador = 0;
+//        
+//        while(contador < 3){
+//            System.out.println("contador = " + contador);
+//            contador++;
+//        }
+//        var contador = 0;
+//        do {
+//            System.out.println("contador = " + contador);
+//            contador++;
+//        } while (contador < 3);
+//
+//    }
+//}
+// Ciclo for / break
 public class HolaMundo {
 
     public static void main(String args[]) {
+        for (var contador = 0; contador < 3; contador++) {
+            if (contador % 2 == 0) {
+                System.out.println("contador = " + contador);
+                //break;
 
-        System.out.println("Digite un numero del mes");
-        Scanner consola = new Scanner(System.in);
-        var nota = Integer.parseInt(consola.nextLine());
-        var texto = "Valor desconocido";
-
-        if (nota == 9 || nota == 10) {
-            texto = "A";
-        } else if (nota == 8 && nota < 9) {
-            texto = "B";
-        } else if (nota == 7 && nota < 8) {
-            texto = "C";
-        } else if (nota == 6 && nota < 7) {
-            texto = "D";
-        } else if (nota == 0 || nota < 6) {
-            texto = "F";
+            }
         }
-        System.out.println("texto " + texto);
 
     }
-
 }

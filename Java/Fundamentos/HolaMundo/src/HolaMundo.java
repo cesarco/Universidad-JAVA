@@ -729,13 +729,14 @@ Puedes utilizar el IDE de tu preferencia para codificar la solución y después 
 //
 //    }
 //}
-// Ciclo for / continue
+// Uso de Etiquetas (Labels) en Java
 public class HolaMundo {
 
     public static void main(String args[]) {
+        inicio:
         for (var contador = 0; contador < 3; contador++) {
             if (contador % 2 != 0) {
-                continue; // ir a la siguiente iteracion
+                continue inicio; // ir a la linea de codigo de la etiqueta
 
             }
             System.out.println("contador = " + contador);

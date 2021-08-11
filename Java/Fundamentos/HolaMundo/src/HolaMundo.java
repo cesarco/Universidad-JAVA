@@ -729,17 +729,26 @@ Puedes utilizar el IDE de tu preferencia para codificar la solución y después 
 //
 //    }
 //}
-// Ciclo for / break
+// Ciclo for / continue
 public class HolaMundo {
 
     public static void main(String args[]) {
         for (var contador = 0; contador < 3; contador++) {
-            if (contador % 2 == 0) {
-                System.out.println("contador = " + contador);
-                //break;
+            if (contador % 2 != 0) {
+                continue; // ir a la siguiente iteracion
 
             }
+            System.out.println("contador = " + contador);
+
         }
+
+//        for (var contador = 0; contador < 3; contador++) {
+//            if (contador % 2 == 0) {
+//                System.out.println("contador = " + contador);
+//                //break;
+//
+//            }
+//        }
 
     }
 }

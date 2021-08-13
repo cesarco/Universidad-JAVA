@@ -14,6 +14,12 @@ public class Aritmetica {
     // Atributos de la clase
     int a;
     int b;
+    
+    // Constructor vacio
+    public Aritmetica(){
+        System.out.println("Ejecuntando constructor");
+    }
+    
 
     //Metodo
     public void sumar() {
@@ -29,8 +35,8 @@ public class Aritmetica {
 
     }
     public int sumarConArgumentos(int arg1, int arg2){
-        a = arg1;
-        b = arg2;
-        return sumarConRetorno();
+        this.a = arg1;  // el arg1 se asigna al atributo this.a
+        this.b = arg2;
+        return this.sumarConRetorno();
     }
 }

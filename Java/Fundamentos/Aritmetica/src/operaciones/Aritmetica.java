@@ -19,7 +19,12 @@ public class Aritmetica {
     public Aritmetica(){
         System.out.println("Ejecuntando constructor");
     }
-    
+    public Aritmetica(int arg1, int arg2){
+        this.a = arg1;
+        this.b = arg2;
+        System.out.println("Ejecutando constructor con arg");
+        
+    }
 
     //Metodo
     public void sumar() {
@@ -27,7 +32,7 @@ public class Aritmetica {
         System.out.println("resultado = " + resultado);
 
     }
-
+    
     public int sumarConRetorno() {
 //        int resultado = a + b;
 //        return resultado;
